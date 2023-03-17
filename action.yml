@@ -11,19 +11,11 @@ inputs:
   sceptre_version:
     description: "Version of Sceptre to install"
     required: false
-    default: "2.3.0"
+    default: "2.5.0"
   sceptre_directory:
     description: "Directory to execute Sceptre commands from"
     required: false
     default: ""
-  sceptre_troposphere:
-    description: "Specify if troposphere templates are used - 'true' or 'false'"
-    required: false
-    default: "false"
-  sceptre_troposphere_version:
-    description: "Version of troposphere to install"
-    required: false
-    default: "2.6.0"
 runs:
     using: "docker"
     image: "./Dockerfile"
